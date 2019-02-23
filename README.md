@@ -12,4 +12,4 @@ I'll be learning as I go, so if there's a long time between updates, it probably
 
 Screenshots of RPG in progress will be added ocasionally. Check out the Wiki for more information.
 <img src="https://github.com/QueenChristina/Neverending-Dream-RPG-in-Python/blob/master/Pictures/Gif%20Player%20Walk%20Cycle.gif" align="center" title="Player Walk Cycle">
-![Screenshot of Progress](https://github.com/QueenChristina/Neverending-Dream-RPG-in-Python/blob/master/Pictures/Progress%202-16-19.JPG)
+![Screenshot of Progress](https://github.com/QueenChristina/Neverending-Dream-RPG-in-Python/blob/master/Pictures/Progress%202-22-19.JPG)
