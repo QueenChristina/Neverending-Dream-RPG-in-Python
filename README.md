@@ -3,6 +3,7 @@
 
 &emsp; Neverending Dream is a story driven RPG that questions the line between dream and reality. This is a personal project started in early
 February 2019.
+![Cover Art](https://github.com/QueenChristina/Neverending-Dream-RPG-in-Python/blob/master/Pictures/Dreaming%20of%20a%20Thousand%20Cranes.png)
 
 &emsp; This is a work in progress that I will be updating ocasionally.
 <br> &emsp; Please be respectful! Feel free to take a look at the code and learn from this. :D
