@@ -11,7 +11,7 @@ Synopsis: <br>
 &emsp;A boy cannot (or pretends not to) tell the difference between reality and dream. As he makes friends and is tasked with the quest to save the world, he must decide to relenquish a happy, but false dream, or brave a harsh and boring adult life.
 
 <p align="center">
-  <img src="https://github.com/QueenChristina/Neverending-Dream-RPG-in-Python/blob/master/Pictures/Lying%20on%20My%20Bed%20Stargazing%20with%20My%20Friend%2C%20Making%20Flower%20Chains.png" width="600">
+  <img src="https://github.com/QueenChristina/Neverending-Dream-RPG-in-Python/blob/master/Pictures/Silent%20Night%2C%20Picking%20Flowers%20with%20My%20Friends.png" width="600">
 </p>
 
 &emsp; Screenshots of RPG in progress will be added ocasionally. Check out the Wiki for more information.
