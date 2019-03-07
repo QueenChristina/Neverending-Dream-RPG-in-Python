@@ -38,42 +38,23 @@ frames=[os.path.join(path, 'Side1.png'), os.path.join( path, 'Side2.png'), os.pa
 index = 0
 currentframe = 0
 animationframe = 6
-
-'''#put in event.type mouse down OR space key loop for interact_object.
-#later trun objects into a list so for object in list...execute cooresponding function
-def interact_object(funtion):
-    if :
-        funtion
-    else:
-        pass'''
     
 #Font and text
-#https://www.youtube.com/watch?v=OsbyjYuvQk4 and https://stackoverflow.com/questions/20842801/how-to-display-text-in-pygame or
-#https://stackoverflow.com/questions/23718596/making-text-appear-one-character-at-a-time-pygame for help
 text_Toggle = False
 text_finished = False
 def message(text):
     global currentframe, text_finished
-    #small_font = pygame.font.SysFont("courier new", 35)
     small_font = pygame.font.Font("PixelFont.ttf", 35)
-    #rectangle = pygame.draw.rect(DISPLAY, (255, 255, 255),(200,150,100,50)) to draw rectangles
-    #text_surface = pygame.font.Font.render(text, False, (0, 0, 0)) other way
     text_surface = small_font.render(text, False, (255, 255, 255))
     text_box = pygame.image.load('Text Box.png')
     text_box = pygame.transform.scale(text_box, (DISPLAY_X-10, int(DISPLAY_Y/3)))
     DISPLAY.blit(text_box, (0, int(2*DISPLAY_Y/3)))
     print_text = ''
-    start_time = pygame.time.get_ticks()
     if text_finished == False:
         for i in text:
                 print_text += i
-                '''if (pygame.time.get_ticks() - start_time) > 100:
-                    start_time = pygame.time.get_ticks()
-                    print_text += i'''
                 text_surface = small_font.render(print_text, False, (255, 255, 255))
-                #https://stackoverflow.com/questions/49432109/how-to-wrap-text-in-pygame-using-pygame-font-font
                 DISPLAY.blit(text_surface, (int(DISPLAY_X/18), int(2.2*DISPLAY_Y/3)))
-                #text_rect = text_surface.get_rect()
                 pygame.display.update()
                 pygame.time.wait(15)
                 if print_text == text:
@@ -116,15 +97,6 @@ def draw_object(path, file, scale, obj_x, obj_y):
     DISPLAY.blit(obj, (obj_x,obj_y))
     #collision detection and adjustment
     player_rect = player.get_rect()
-    #use and learn sprite class later
-    '''class object(pygame.sprite.Sprite):
-        def __init__(self):
-            pygame.sprite.Sprite.__init__(self)
-            self.x = 0
-            self.y = 0
-            self.image = pygame.image.load('object.png')
-            self.rect = pygame.Rect(self.x,self.y,32,32) #The rect for collision detection.'''
-    #if player_rect.colliderect(obj_rect):
     if PointinBox(player_x, player_y, player_rect, obj_x, obj_y, obj_rect, scale):
         if direction == 'down':
             player_y -= distance
@@ -288,8 +260,6 @@ while True:
     else:
         pass
 
-    #message("Hello? Anyone there?")
-
     #Limit character movement to scene borders
     if player_x < border_left:
         player_x = border_left
@@ -314,7 +284,7 @@ while True:
             sys.exit()
             
     if text_Toggle == True:
-        message("Hello Mr. Pie. I love to eat apples.")
+        message("Hello Mr. Pie. I love to eat apples. BTW, this is a test")
     else:
         pass
     
