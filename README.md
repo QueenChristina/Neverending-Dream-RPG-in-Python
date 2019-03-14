@@ -8,10 +8,6 @@
 Synopsis: <br>
 &emsp; <b> Neverending Dream </b> is an RPG made in Python about a boy who prefers dreams over reality. He has a cat that he loves, but feels the "real" world is boring, gray, and empty otherwise. Everyday he must drag himself out of bed to work at Gener Inc., earning just enough money for a little food and sleep. In his dreams, though, friends are lovable and the world is colorful and fun. As he delves deeper into the dream world, however, dark secrets start to seep out of the seams: something is watching him, and is trapping him in its <b>illusions</b>. Ultimately, he must decide between the real world and dream world, as one world suffers the more he stays in the other. 
 
-<p align="center">
-  <img src="https://github.com/QueenChristina/Neverending-Dream-RPG-in-Python/blob/master/Pictures/A%20Silent%20Night%2C%20Picking%20Flowers%20with%20My%20Friends.png" width="500">
-</p>
-
 &emsp; Screenshots of RPG in progress will be added ocasionally. Check out the Wiki for more information.
 <br>
 &emsp; I'll be learning as I go, so if there's a long time between updates, it probably means I got stuck on figuring out how to make something happen in pygame and am researching online for similar problems and solutions (usually Stack Overflow). I'm listing my next goals in the Wiki, so if you have any tips for me as to how to achieve those goals, I would be extremely grateful to you!
