@@ -14,7 +14,7 @@ Synopsis: <br>
 <img src="https://github.com/QueenChristina/Neverending-Dream-RPG-in-Python/blob/master/Pictures/Gif%20Player%20Walk%20Cycle.gif" align="center" title="Player Walk Cycle">
 <br>
 <p align="center">
-  <img src="https://github.com/QueenChristina/Neverending-Dream-RPG-in-Python/blob/master/Pictures/Progress%203-3-19.gif" width="600">
+  <img src="https://github.com/QueenChristina/Neverending-Dream-RPG-in-Python/blob/master/Pictures/Progress%203-14-19.gif" width="600">
 </p>
 
 <br> &emsp; Please be respectful! Feel free to take a look at the code and learn from this. :D
