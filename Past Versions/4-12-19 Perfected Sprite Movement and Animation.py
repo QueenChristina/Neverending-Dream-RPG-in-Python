@@ -1,3 +1,20 @@
+# Perfected the coordination and movement of BOTH animation and direction; MULTIPLE points can now be called to move to in SUCCESSION
+# with just ONE LINE; and this path can be moved over just once or looped forever
+# However, the code is still rather BULKY, with too many "if...else" statements, and the initialization of each SPRITE's walk cycle for
+# ALL directions is lengthly and at times confusing. I will correct this if I have time.
+# Challenges here come from having both list of images and just one image as possible frames for a certain direction of movement, 
+# which comes up with
+# errors of images not being like lists (being subscriptable) (so I must change that line to not conflict with images)
+# Something else that made code more bulky was having to put something like
+# imgPersonLeft = imgPerson [4:7] AND THEN placing {'left': imgPersonLeft, ...} INSTEAD OF PLACING THE LIST IN DIRECTLY
+# because this conflicts with 
+# self.index =(self.index + 1)% len(self.images[self.direction]) in animate(self)
+# because the MODULUS of len(self.images[self.direction]) would return a number starting from 0, when
+# it should only be possible for the lowest self.index of imgPerson [4:7] to be 4, otherwise the walk sequence is messed up.
+
+# A possible solution is to find a method to add the lowest index of the list after the modulus is taken to self.index
+# and to then be able to place the lists back in to the dictionary directly
+#####################################################################################################################################
 import pygame, sys, time, os
 from pygame.locals import *
 pygame.init()
@@ -9,7 +26,6 @@ DISPLAY_X = 1024
 DISPLAY_Y = 768
 DISPLAY = pygame.display.set_mode ((DISPLAY_X, DISPLAY_Y))
 pygame.display.set_caption('Test RPG Animations')
-
 
 
 path = 'Room'
@@ -44,14 +60,6 @@ for u in flip_list:
     for i in range (len(u)):
         u[i] = pygame.transform.flip(u[i], True, False)
 
-'''image_dictlist = [imgPerson]
-    for key in u:
-        if key == 'left':
-            for frame in range(len(u [key])):
-                u[key][frame] = pygame.transform.flip(u[key][frame], True, False)'''
-
-
-
 currentframe = 0
 animationframe = 5
 class Sprite(pygame.sprite.Sprite):
@@ -60,7 +68,6 @@ class Sprite(pygame.sprite.Sprite):
         self.index = 0
         self.run_once = run_once
         self.done = False
-        #images is a DICTIONARY of list of images lined up to a direction the object is in
         self.images = images
         self.image = None
         self.size = size
