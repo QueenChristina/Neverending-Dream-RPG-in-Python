@@ -43,10 +43,10 @@ for u in image_list:
     for i in range (len(u)):
         u[i] = pygame.image.load(u[i])
 
-imgPersonLeft = imgPerson [0:3]
-imgPersonRight = imgPerson [0:3]
-imgPersonUp = imgPerson [8:11]
-imgPersonDown = imgPerson [4:7]
+imgPersonLeft = imgPerson [0:4]
+imgPersonRight = imgPerson [0:4]
+imgPersonUp = imgPerson [8:12]
+imgPersonDown = imgPerson [4:8]
 #for standing (still) images, in this order place: [left, right, up, down]
 imgPersonStanding = [pygame.transform.flip(imgPerson [0], True, False), imgPerson [0], imgPerson [8], imgPerson [4]]
 imgPerson = {'left': imgPersonLeft,
