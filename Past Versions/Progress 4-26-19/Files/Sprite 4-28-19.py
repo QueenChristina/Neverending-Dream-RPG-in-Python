@@ -1,3 +1,5 @@
+# perfected sprite collision detection and prevention of overlap, as well as sprite (other than player) respose to player as obstacle
+
 import pygame, sys, time, os
 from pygame.locals import *
 from Files import Var
