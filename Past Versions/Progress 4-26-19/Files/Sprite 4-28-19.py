@@ -293,11 +293,11 @@ class Object(Sprite):
             self.collision[6] = Player.colliderect.collidepoint(self.colliderect.midtop)
             self.collision[7] = Player.colliderect.collidepoint(self.colliderect.midbottom)
 
-            sideself = "no"
+          sideself = "no"
             if (self.collision[0] or self.collision[2] or self.collision[4]) and self.dx < 0:
                 # LEFT of self touching player
                 sideself = "left"
-                self.posx += self.dx
+                self.posx -= self.dx
             if (self.collision[1] or self.collision[3] or self.collision[5]) and self.dx > 0:
                 # RIGHT of self touching player
                 sideself = "right"
